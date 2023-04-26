@@ -29,7 +29,6 @@ form input[type="button"]:hover {
 form .display {
   display: flex;
   justify-content: flex-end;
-  
 }
 
 form .display input {
