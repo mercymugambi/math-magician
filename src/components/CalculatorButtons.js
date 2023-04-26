@@ -1,4 +1,4 @@
-function CalculatorButtons() {
+export default function CalculatorButtons() {
   return (
     <div>
       <div>
@@ -33,5 +33,3 @@ function CalculatorButtons() {
     </div>
   );
 }
-
-export default CalculatorButtons;

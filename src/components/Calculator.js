@@ -1,4 +1,4 @@
-import CalculatorButtons from './Operators';
+import CalculatorButtons from './CalculatorButtons';
 
 function Calculator() {
   return (
