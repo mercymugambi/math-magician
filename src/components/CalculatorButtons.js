@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
 export default function CalculatorButtons() {
-  const [calculatorData, setinCalculatorData] = useState({
+  const [calculatorData, setInCalculatorData] = useState({
     total: null,
     next: null,
     operation: null,
@@ -10,7 +10,7 @@ export default function CalculatorButtons() {
 
   const myInputValue = (buttonName) => {
     const newData = calculate(calculatorData, buttonName);
-    setinCalculatorData(newData);
+    setInCalculatorData(newData);
   };
 
   const inputValue = calculatorData.next || calculatorData.total || '0';
