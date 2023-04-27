@@ -2,6 +2,11 @@ export default function CalculatorButtons() {
   return (
     <div>
       <div>
+        <div className="display">
+          <input type="text" value="0" />
+        </div>
+      </div>
+      <div>
         <input type="button" value="AC" />
         <input type="button" value="+/-" />
         <input type="button" value="%" />
