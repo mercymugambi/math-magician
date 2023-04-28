@@ -2,6 +2,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #fff;
@@ -51,11 +52,9 @@ form .display input {
 
 .quoteContainer {
   width: 50%;
-  padding-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
 }
 
 .quotes {
