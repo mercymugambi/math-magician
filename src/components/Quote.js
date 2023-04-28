@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 
 const Quote = () => {
-  const [quote, setquote] = useState('');
+  const [quote, setQuote] = useState('');
   const [quoteError, setQuoteError] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchQuotes = async () => {
@@ -16,9 +17,11 @@ const Quote = () => {
           },
         );
         const data = await response.json();
-        setquote(data[0].quote);
+        setQuote(data[0].quote);
+        setIsLoading(false);
       } catch (error) {
-        setQuoteError('Error occured fetching quotes!');
+        setQuoteError('Error occurred fetching quotes!');
+        setIsLoading(false);
       }
     };
 
@@ -29,7 +32,11 @@ const Quote = () => {
 
   return (
     <div className="quoteContainer">
-      <p className="quotes">{quote}</p>
+      {isLoading ? (
+        <p className="loading">Loading...</p>
+      ) : (
+        <p className="quotes">{quote}</p>
+      )}
       {quoteError && <p className="error">{quoteError}</p>}
     </div>
   );

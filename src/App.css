@@ -50,7 +50,7 @@ form .display input {
 }
 
 .quoteContainer {
-  width: 30%;
+  width: 50%;
   padding-bottom: 50px;
   display: flex;
   align-items: center;
@@ -62,4 +62,9 @@ form .display input {
   color: rgb(139, 107, 47);
   font-size: 16px;
   line-height: 20px;
+}
+
+.loading {
+  font-size: 40px;
+  color: rgb(250, 194, 10);
 }
