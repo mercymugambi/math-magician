@@ -8,6 +8,9 @@
 }
 
 .calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -44,4 +47,19 @@ form .display input {
 
 .btnOperator-0 {
   width: 50%;
+}
+
+.quoteContainer {
+  width: 30%;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.quotes {
+  color: rgb(139, 107, 47);
+  font-size: 16px;
+  line-height: 20px;
 }

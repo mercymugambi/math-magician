@@ -1,11 +1,15 @@
 import CalculatorButtons from './CalculatorButtons';
+import Quote from './Quote';
 
 function Calculator() {
   return (
-    <div className="calculator">
-      <form action="">
-        <CalculatorButtons />
-      </form>
+    <div>
+      <Quote />
+      <div className="calculator">
+        <form action="">
+          <CalculatorButtons />
+        </form>
+      </div>
     </div>
   );
 }
