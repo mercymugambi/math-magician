@@ -12,7 +12,7 @@ const Quote = () => {
           'https://api.api-ninjas.com/v1/quotes?category=computers',
           {
             headers: {
-              'X-Api-Key': 'bIjYCDyNgX1RI/dP1mdaMQ==JiMou8R3AeWdO2LE',
+              'X-Api-Key': 'uDlg8X0L14FYqImg58eHxbqOk88p65SBqSEvkZeQ',
             },
           },
         );

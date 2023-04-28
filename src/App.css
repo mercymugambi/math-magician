@@ -59,12 +59,13 @@ form .display input {
 }
 
 .quotes {
-  color: rgb(139, 107, 47);
+  color: rgb(67, 66, 66);
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
 
 .loading {
-  font-size: 40px;
+  font-size: 60px;
   color: rgb(250, 194, 10);
 }
