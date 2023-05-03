@@ -1,6 +1,6 @@
 const Home = () => (
   <>
-    <h2>Welcome to our page!</h2>
+    <h2>Hello! Welcome to our page.</h2>
     <p>
       Welcome to Math Magician, your one-stop-shop for quick mental
       math practice and inspirational quotes. Sharpen your arithmetic
