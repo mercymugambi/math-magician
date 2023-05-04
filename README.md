@@ -2,6 +2,8 @@
 # Math Magician React App Project
 This project is a calculator app called Math-Magician that allows users to perform simple arithmetic calculations.
 
+[Live Demo Link](https://math-magician-ji5f.onrender.com/)
+
 <a name="readme-top"></a>
 
 <!--
@@ -29,6 +31,7 @@ After you're finished please remove all the comments and instructions!
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
 
   <h3><b>Hello</b></h3>
+
 
 </div>
 
@@ -97,9 +100,9 @@ Displaying the result of the calculation.
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
+## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo Link](https://mercymugambi.github.io/) -->
+- [Live Demo Link](https://math-magician-ji5f.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
