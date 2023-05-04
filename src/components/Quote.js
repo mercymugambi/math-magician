@@ -1,11 +1,13 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Quote = () => {
   const [quote, setQuote] = useState('');
   const [quoteError, setQuoteError] = useState('');
   const [isLoading, setIsLoading] = useState(true);
+  const isMountedRef = useRef(false);
 
   useEffect(() => {
+    isMountedRef.current = true;
     const fetchQuotes = async () => {
       try {
         const response = await fetch(
@@ -17,17 +19,21 @@ const Quote = () => {
           },
         );
         const data = await response.json();
-        setQuote(data[0].quote);
-        setIsLoading(false);
+        if (isMountedRef.current) {
+          setQuote(data[0].quote);
+          setIsLoading(false);
+        }
       } catch (error) {
-        setQuoteError('Error occurred fetching quotes!');
-        setIsLoading(false);
+        if (isMountedRef.current) {
+          setQuoteError('Error occurred fetching quotes!');
+          setIsLoading(false);
+        }
       }
     };
-
-    setTimeout(() => {
-      fetchQuotes();
-    }, 1000);
+    fetchQuotes();
+    return () => {
+      isMountedRef.current = false;
+    };
   }, []);
 
   return (
