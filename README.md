@@ -98,8 +98,6 @@ Addition, subtraction, multiplication, and division of two numbers.
 Clearing the input and output fields.
 Displaying the result of the calculation.
 
-<!-- LIVE DEMO -->
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://math-magician-ji5f.onrender.com/)
